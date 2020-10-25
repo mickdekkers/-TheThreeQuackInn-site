@@ -28,7 +28,6 @@ function transformReference(reference: string) {
         return '+' + text;
     } else if (reference.includes('{@h}') || reference.includes('@h')) {
         return 'Hit: ' + text.replace('{@h}', '').replace('@h', '');
-    } else if (reference.includes('hit')) {
     }
 
     return text;
