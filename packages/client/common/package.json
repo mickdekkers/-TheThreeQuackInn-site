@@ -1,6 +1,6 @@
 {
     "name": "@threequackinn/client-common",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Houses all the common components used over the clients",
     "license": "MIT",
     "private": true,
