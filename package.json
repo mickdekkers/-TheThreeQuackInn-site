@@ -51,6 +51,9 @@
         }
     },
     "release": {
+        "branches": [
+            "main"
+        ],
         "verifyConditions": [
             "@semantic-release/github"
         ],

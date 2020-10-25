@@ -22,6 +22,9 @@
         "postcss-preset-env": "6.7.0"
     },
     "release": {
+        "branches": [
+            "main"
+        ],
         "verifyConditions": [
             "@semantic-release/github"
         ],
@@ -30,7 +33,7 @@
             "@semantic-release/npm",
             {
                 "path": "@semantic-release/git",
-                "message": "chore(release): @tradecast/client-utils v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+                "message": "chore(release): @threequackinn/landing v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
             }
         ],
         "publish": [
