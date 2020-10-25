@@ -1,0 +1,30 @@
+{
+    "name": "@threequackinn/client-common",
+    "version": "1.0.0",
+    "description": "Houses all the common components used over the clients",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "classnames": "2.2.6"
+    },
+    "devDependencies": {
+        "@types/classnames": "2.2.10"
+    },
+    "release": {
+        "verifyConditions": [
+            "@semantic-release/github"
+        ],
+        "prepare": [
+            "@semantic-release/changelog",
+            "@semantic-release/npm",
+            {
+                "path": "@semantic-release/git",
+                "message": "chore(release): @tradecast/client-utils v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+            }
+        ],
+        "publish": [
+            "@semantic-release/github"
+        ],
+        "success": []
+    }
+}

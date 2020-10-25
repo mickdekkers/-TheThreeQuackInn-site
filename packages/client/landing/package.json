@@ -1,0 +1,41 @@
+{
+    "name": "landing",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "build": "next build",
+        "dev": "next dev",
+        "start": "next start"
+    },
+    "dependencies": {
+        "@threequackinn/client-common": "*",
+        "next": "9.5.5",
+        "react": "17.0.1",
+        "react-dom": "17.0.1",
+        "tailwindcss": "1.9.6"
+    },
+    "devDependencies": {
+        "@types/react": "16.9.53",
+        "next-compose-plugins": "2.2.0",
+        "next-plugin-custom-babel-config": "1.0.4",
+        "next-transpile-modules": "4.1.0",
+        "postcss-preset-env": "6.7.0"
+    },
+    "release": {
+        "verifyConditions": [
+            "@semantic-release/github"
+        ],
+        "prepare": [
+            "@semantic-release/changelog",
+            "@semantic-release/npm",
+            {
+                "path": "@semantic-release/git",
+                "message": "chore(release): @tradecast/client-utils v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+            }
+        ],
+        "publish": [
+            "@semantic-release/github"
+        ],
+        "success": []
+    }
+}

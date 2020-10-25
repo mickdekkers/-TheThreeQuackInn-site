@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+        Helvetica Neue, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.button-gradient {
+    background: linear-gradient(45deg, #11998e, #38ef7d);
+}
+
+.button-gradient:hover,
+.button-gradient:focus {
+    background: linear-gradient(45deg, #11998e 20%, #38ef7d);
+}
+
+.link,
+a {
+    background-image: linear-gradient(45deg, #11998e, #38ef7d);
+    color: transparent !important;
+    background-clip: text;
+}
+
+.link:hover,
+a:hover,
+.link:focus,
+a:focus {
+    -webkit-text-fill-color: #11998e;
+}
