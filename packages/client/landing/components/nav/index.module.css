@@ -1,0 +1,50 @@
+.hoverMenu {
+    position: relative;
+    padding: 0.5rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.hoverMenu:hover {
+    background: linear-gradient(45deg, #11998e, #38ef7d);
+}
+
+.hoverMenu:hover span {
+    color: #fff;
+}
+
+.subMenu {
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    min-width: 320px;
+    top: 100%;
+    flex-direction: column;
+}
+
+.hoverMenu:hover .subMenu {
+    display: flex;
+}
+
+.active {
+    background-image: linear-gradient(45deg, #11998e, #38ef7d);
+    color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+.active:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(45deg, #11998e, #38ef7d);
+}
+
+.hoverMenu:hover .active:after {
+    content: none;
+}

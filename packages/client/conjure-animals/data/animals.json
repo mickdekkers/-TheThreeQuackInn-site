@@ -1,0 +1,4029 @@
+{
+    "allosaurus": {
+        "name": "Allosaurus",
+        "size": "L",
+        "ac": {
+            "ac": 13,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 51,
+            "formula": "6d10 + 18"
+        },
+        "speed": {
+            "walk": 60
+        },
+        "str": 19,
+        "dex": 13,
+        "con": 17,
+        "int": 2,
+        "cha": 5,
+        "wis": 12,
+        "skill": {
+            "perception": "+5"
+        },
+        "cr": "2",
+        "trait": [
+            {
+                "name": "Pounce",
+                "entries": [
+                    "If the allosaurus moves at least 30 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the allosaurus can make one bite attack against it as a bonus action."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage."
+                ]
+            },
+            {
+                "name": "Claw",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 15,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "ape": {
+        "name": "Ape",
+        "size": "M",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 19,
+            "formula": "3d8 + 6"
+        },
+        "speed": {
+            "walk": 30,
+            "climb": 30
+        },
+        "str": 16,
+        "dex": 14,
+        "con": 14,
+        "int": 6,
+        "cha": 7,
+        "wis": 12,
+        "skill": {
+            "athletics": "+5",
+            "perception": "+3"
+        },
+        "cr": "1/2",
+        "action": [
+            {
+                "name": "Multiattack",
+                "entries": [
+                    "The ape makes two fist attacks."
+                ]
+            },
+            {
+                "name": "Fist",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+                ]
+            },
+            {
+                "name": "Rock",
+                "entries": [
+                    "{@atk rw} {@hit 5} to hit, range 25/50 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "axe-beak": {
+        "name": "Axe Beak",
+        "size": "L",
+        "ac": {
+            "ac": 11,
+            "from": ""
+        },
+        "hp": {
+            "average": 19,
+            "formula": "3d10 + 3"
+        },
+        "speed": {
+            "walk": 50
+        },
+        "str": 14,
+        "dex": 12,
+        "con": 12,
+        "int": 2,
+        "cha": 5,
+        "wis": 10,
+        "cr": "1/4",
+        "action": [
+            {
+                "name": "Beak",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "baboon": {
+        "name": "Baboon",
+        "size": "S",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 3,
+            "formula": "1d6"
+        },
+        "speed": {
+            "walk": 30,
+            "climb": 30
+        },
+        "str": 8,
+        "dex": 14,
+        "con": 11,
+        "int": 4,
+        "cha": 6,
+        "wis": 12,
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Pack Tactics",
+                "entries": [
+                    "The baboon has advantage on an attack roll against a creature if at least one of the baboon's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d4 - 1}) piercing damage."
+                ]
+            }
+        ],
+        "passive": 11,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "badger": {
+        "name": "Badger",
+        "size": "T",
+        "ac": {
+            "ac": 10,
+            "from": ""
+        },
+        "hp": {
+            "average": 3,
+            "formula": "1d4 + 1"
+        },
+        "speed": {
+            "walk": 20,
+            "burrow": 5
+        },
+        "str": 4,
+        "dex": 11,
+        "con": 12,
+        "int": 2,
+        "cha": 5,
+        "wis": 12,
+        "senses": [
+            "darkvision 30 ft."
+        ],
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Keen Smell",
+                "entries": [
+                    "The badger has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+                ]
+            }
+        ],
+        "passive": 11,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "bat": {
+        "name": "Bat",
+        "size": "T",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 1,
+            "formula": "1d4 - 1"
+        },
+        "speed": {
+            "walk": 5,
+            "fly": 30
+        },
+        "str": 2,
+        "dex": 15,
+        "con": 8,
+        "int": 2,
+        "cha": 4,
+        "wis": 12,
+        "senses": [
+            "blindsight 60 ft."
+        ],
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Echolocation",
+                "entries": [
+                    "The bat can't use its blindsight while {@condition deafened}."
+                ]
+            },
+            {
+                "name": "Keen Hearing",
+                "entries": [
+                    "The bat has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 0} to hit, reach 5 ft., one creature. {@h}1 piercing damage."
+                ]
+            }
+        ],
+        "passive": 11,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "black-bear": {
+        "name": "Black Bear",
+        "size": "M",
+        "ac": {
+            "ac": 11,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 19,
+            "formula": "3d8 + 6"
+        },
+        "speed": {
+            "walk": 40,
+            "climb": 30
+        },
+        "str": 15,
+        "dex": 10,
+        "con": 14,
+        "int": 2,
+        "cha": 7,
+        "wis": 12,
+        "skill": {
+            "perception": "+3"
+        },
+        "cr": "1/2",
+        "trait": [
+            {
+                "name": "Keen Smell",
+                "entries": [
+                    "The bear has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Multiattack",
+                "entries": [
+                    "The bear makes two attacks: one with its bite and one with its claws."
+                ]
+            },
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+                ]
+            },
+            {
+                "name": "Claws",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "blood-hawk": {
+        "name": "Blood Hawk",
+        "size": "S",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 7,
+            "formula": "2d6"
+        },
+        "speed": {
+            "walk": 10,
+            "fly": 60
+        },
+        "str": 6,
+        "dex": 14,
+        "con": 10,
+        "int": 3,
+        "cha": 5,
+        "wis": 14,
+        "skill": {
+            "perception": "+4"
+        },
+        "cr": "1/8",
+        "trait": [
+            {
+                "name": "Keen Sight",
+                "entries": [
+                    "The hawk has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
+                ]
+            },
+            {
+                "name": "Pack Tactics",
+                "entries": [
+                    "The hawk has advantage on an attack roll against a creature if at least one of the hawk's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Beak",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+                ]
+            }
+        ],
+        "passive": 14,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "boar": {
+        "name": "Boar",
+        "size": "M",
+        "ac": {
+            "ac": 11,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 11,
+            "formula": "2d8 + 2"
+        },
+        "speed": {
+            "walk": 40
+        },
+        "str": 13,
+        "dex": 11,
+        "con": 12,
+        "int": 2,
+        "cha": 5,
+        "wis": 9,
+        "cr": "1/4",
+        "trait": [
+            {
+                "name": "Charge",
+                "entries": [
+                    "If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 3 ({@damage 1d6}) slashing damage. If the target is a creature, it must succeed on a {@dc 11} Strength saving throw or be knocked {@condition prone}."
+                ]
+            },
+            {
+                "name": "Relentless (Recharges after a Short or Long Rest)",
+                "entries": [
+                    "If the boar takes 7 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Tusk",
+                "entries": [
+                    "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 9,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "brown-bear": {
+        "name": "Brown Bear",
+        "size": "L",
+        "ac": {
+            "ac": 11,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 34,
+            "formula": "4d10 + 12"
+        },
+        "speed": {
+            "walk": 40,
+            "climb": 30
+        },
+        "str": 19,
+        "dex": 10,
+        "con": 16,
+        "int": 2,
+        "cha": 7,
+        "wis": 13,
+        "skill": {
+            "perception": "+3"
+        },
+        "cr": "1",
+        "trait": [
+            {
+                "name": "Keen Smell",
+                "entries": [
+                    "The bear has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Multiattack",
+                "entries": [
+                    "The bear makes two attacks: one with its bite and one with its claws."
+                ]
+            },
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+                ]
+            },
+            {
+                "name": "Claws",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "camel": {
+        "name": "Camel",
+        "size": "L",
+        "ac": {
+            "ac": 9,
+            "from": ""
+        },
+        "hp": {
+            "average": 15,
+            "formula": "2d10 + 4"
+        },
+        "speed": {
+            "walk": 50
+        },
+        "str": 16,
+        "dex": 8,
+        "con": 14,
+        "int": 2,
+        "cha": 5,
+        "wis": 8,
+        "cr": "1/8",
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."
+                ]
+            }
+        ],
+        "passive": 9,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "cat": {
+        "name": "Cat",
+        "size": "T",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 2,
+            "formula": "1d4"
+        },
+        "speed": {
+            "walk": 40,
+            "climb": 30
+        },
+        "str": 3,
+        "dex": 15,
+        "con": 10,
+        "int": 3,
+        "cha": 7,
+        "wis": 12,
+        "skill": {
+            "perception": "+3",
+            "stealth": "+4"
+        },
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Keen Smell",
+                "entries": [
+                    "The cat has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Claws",
+                "entries": [
+                    "{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}1 slashing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "cave-bear": {
+        "name": "Cave Bear",
+        "size": "L",
+        "ac": {
+            "ac": 12,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 42,
+            "formula": "5d10 + 15"
+        },
+        "speed": {
+            "walk": 40,
+            "swim": 30
+        },
+        "str": 20,
+        "dex": 10,
+        "con": 16,
+        "int": 2,
+        "cha": 7,
+        "wis": 13,
+        "skill": {
+            "perception": "+3"
+        },
+        "senses": [
+            "darkvision 60 ft."
+        ],
+        "cr": "2",
+        "trait": [
+            {
+                "name": "Keen Smell",
+                "entries": [
+                    "The bear has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Multiattack",
+                "entries": [
+                    "The bear makes two attacks: one with its bite and one with its claws."
+                ]
+            },
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) piercing damage."
+                ]
+            },
+            {
+                "name": "Claws",
+                "entries": [
+                    "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "constrictor-snake": {
+        "name": "Constrictor Snake",
+        "size": "L",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 13,
+            "formula": "2d10 + 2"
+        },
+        "speed": {
+            "walk": 30,
+            "swim": 30
+        },
+        "str": 15,
+        "dex": 14,
+        "con": 12,
+        "int": 1,
+        "cha": 3,
+        "wis": 10,
+        "senses": [
+            "blindsight 10 ft."
+        ],
+        "cr": "1/4",
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+                ]
+            },
+            {
+                "name": "Constrict",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 14}). Until this grapple ends, the creature is {@condition restrained}, and the snake can't constrict another target."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "crab": {
+        "name": "Crab",
+        "size": "T",
+        "ac": {
+            "ac": 11,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 2,
+            "formula": "1d4"
+        },
+        "speed": {
+            "walk": 20,
+            "swim": 20
+        },
+        "str": 2,
+        "dex": 11,
+        "con": 10,
+        "int": 1,
+        "cha": 2,
+        "wis": 8,
+        "skill": {
+            "stealth": "+2"
+        },
+        "senses": [
+            "blindsight 30 ft."
+        ],
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Amphibious",
+                "entries": [
+                    "The crab can breathe air and water."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Claw",
+                "entries": [
+                    "{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}1 bludgeoning damage."
+                ]
+            }
+        ],
+        "passive": 9,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "crocodile": {
+        "name": "Crocodile",
+        "size": "L",
+        "ac": {
+            "ac": 12,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 19,
+            "formula": "3d10 + 3"
+        },
+        "speed": {
+            "walk": 20,
+            "swim": 30
+        },
+        "str": 15,
+        "dex": 10,
+        "con": 13,
+        "int": 2,
+        "cha": 5,
+        "wis": 10,
+        "skill": {
+            "stealth": "+2"
+        },
+        "cr": "1/2",
+        "trait": [
+            {
+                "name": "Hold Breath",
+                "entries": [
+                    "The crocodile can hold its breath for 15 minutes."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d10 + 2}) piercing damage, and the target is {@condition grappled} (escape {@dc 12}). Until this grapple ends, the target is {@condition restrained}, and the crocodile can't bite another target"
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "deer": {
+        "name": "Deer",
+        "size": "M",
+        "ac": {
+            "ac": 13,
+            "from": ""
+        },
+        "hp": {
+            "average": 4,
+            "formula": "1d8"
+        },
+        "speed": {
+            "walk": 50
+        },
+        "str": 11,
+        "dex": 16,
+        "con": 11,
+        "int": 2,
+        "cha": 5,
+        "wis": 14,
+        "cr": "0",
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage."
+                ]
+            }
+        ],
+        "passive": 12,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "dire-wolf": {
+        "name": "Dire Wolf",
+        "size": "L",
+        "ac": {
+            "ac": 14,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 37,
+            "formula": "5d10 + 10"
+        },
+        "speed": {
+            "walk": 50
+        },
+        "str": 17,
+        "dex": 15,
+        "con": 15,
+        "int": 3,
+        "cha": 7,
+        "wis": 12,
+        "skill": {
+            "perception": "+3",
+            "stealth": "+4"
+        },
+        "cr": "1",
+        "trait": [
+            {
+                "name": "Keen Hearing and Smell",
+                "entries": [
+                    "The wolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+                ]
+            },
+            {
+                "name": "Pack Tactics",
+                "entries": [
+                    "The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "draft-horse": {
+        "name": "Draft Horse",
+        "size": "L",
+        "ac": {
+            "ac": 10,
+            "from": ""
+        },
+        "hp": {
+            "average": 19,
+            "formula": "3d10 + 3"
+        },
+        "speed": {
+            "walk": 40
+        },
+        "str": 18,
+        "dex": 10,
+        "con": 12,
+        "int": 2,
+        "cha": 7,
+        "wis": 11,
+        "cr": "1/4",
+        "action": [
+            {
+                "name": "Hooves",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) bludgeoning damage."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "eagle": {
+        "name": "Eagle",
+        "size": "S",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 3,
+            "formula": "1d6"
+        },
+        "speed": {
+            "walk": 10,
+            "fly": 60
+        },
+        "str": 6,
+        "dex": 15,
+        "con": 10,
+        "int": 2,
+        "cha": 7,
+        "wis": 14,
+        "skill": {
+            "perception": "+4"
+        },
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Keen Sight",
+                "entries": [
+                    "The eagle has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Talons",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 14,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "elk": {
+        "name": "Elk",
+        "size": "L",
+        "ac": {
+            "ac": 10,
+            "from": ""
+        },
+        "hp": {
+            "average": 13,
+            "formula": "2d10 + 2"
+        },
+        "speed": {
+            "walk": 50
+        },
+        "str": 16,
+        "dex": 10,
+        "con": 12,
+        "int": 2,
+        "cha": 6,
+        "wis": 10,
+        "cr": "1/4",
+        "trait": [
+            {
+                "name": "Charge",
+                "entries": [
+                    "If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ({@dice 2d6}) damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Ram",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+                ]
+            },
+            {
+                "name": "Hooves",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one {@condition prone} creature. {@h}8 ({@damage 2d4 + 3}) bludgeoning damage."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "flying-snake": {
+        "name": "Flying Snake",
+        "size": "T",
+        "ac": {
+            "ac": 14,
+            "from": ""
+        },
+        "hp": {
+            "average": 5,
+            "formula": "2d4"
+        },
+        "speed": {
+            "walk": 30,
+            "fly": 60,
+            "swim": 30
+        },
+        "str": 4,
+        "dex": 18,
+        "con": 11,
+        "int": 2,
+        "cha": 5,
+        "wis": 12,
+        "senses": [
+            "blindsight 10 ft."
+        ],
+        "cr": "1/8",
+        "trait": [
+            {
+                "name": "Flyby",
+                "entries": [
+                    "The snake doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}1 piercing damage plus 7 ({@damage 3d4}) poison damage."
+                ]
+            }
+        ],
+        "passive": 11,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "frog": {
+        "name": "Frog",
+        "size": "T",
+        "ac": {
+            "ac": 11,
+            "from": ""
+        },
+        "hp": {
+            "average": 1,
+            "formula": "1d4 - 1"
+        },
+        "speed": {
+            "walk": 20,
+            "swim": 20
+        },
+        "str": 1,
+        "dex": 13,
+        "con": 8,
+        "int": 1,
+        "cha": 3,
+        "wis": 8,
+        "skill": {
+            "perception": "+1",
+            "stealth": "+3"
+        },
+        "senses": [
+            "darkvision 30 ft."
+        ],
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Amphibious",
+                "entries": [
+                    "The frog can breathe air and water"
+                ]
+            },
+            {
+                "name": "Standing Leap",
+                "entries": [
+                    "The frog's long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start."
+                ]
+            }
+        ],
+        "passive": 11,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-badger": {
+        "name": "Giant Badger",
+        "size": "M",
+        "ac": {
+            "ac": 10,
+            "from": ""
+        },
+        "hp": {
+            "average": 13,
+            "formula": "2d8 + 4"
+        },
+        "speed": {
+            "walk": 30,
+            "burrow": 10
+        },
+        "str": 13,
+        "dex": 10,
+        "con": 15,
+        "int": 2,
+        "cha": 5,
+        "wis": 12,
+        "senses": [
+            "darkvision 30 ft."
+        ],
+        "cr": "1/4",
+        "trait": [
+            {
+                "name": "Keen Smell",
+                "entries": [
+                    "The badger has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Multiattack",
+                "entries": [
+                    "The badger makes two attacks: one with its bite and one with its claws."
+                ]
+            },
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage."
+                ]
+            },
+            {
+                "name": "Claws",
+                "entries": [
+                    "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}6 ({@damage 2d4 + 1}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 11,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-bat": {
+        "name": "Giant Bat",
+        "size": "L",
+        "ac": {
+            "ac": 13,
+            "from": ""
+        },
+        "hp": {
+            "average": 22,
+            "formula": "4d10"
+        },
+        "speed": {
+            "walk": 10,
+            "fly": 60
+        },
+        "str": 15,
+        "dex": 16,
+        "con": 11,
+        "int": 2,
+        "cha": 6,
+        "wis": 12,
+        "senses": [
+            "blindsight 60 ft."
+        ],
+        "cr": "1/4",
+        "trait": [
+            {
+                "name": "Echolocation",
+                "entries": [
+                    "The bat can't use its blindsight while {@condition deafened}."
+                ]
+            },
+            {
+                "name": "Keen Hearing",
+                "entries": [
+                    "The bat has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+                ]
+            }
+        ],
+        "passive": 11,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-boar": {
+        "name": "Giant Boar",
+        "size": "L",
+        "ac": {
+            "ac": 12,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 42,
+            "formula": "5d10 + 15"
+        },
+        "speed": {
+            "walk": 40
+        },
+        "str": 17,
+        "dex": 10,
+        "con": 16,
+        "int": 2,
+        "cha": 5,
+        "wis": 7,
+        "cr": "2",
+        "trait": [
+            {
+                "name": "Charge",
+                "entries": [
+                    "If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 ({@damage 2d6}) slashing damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+                ]
+            },
+            {
+                "name": "Relentless (Recharges after a Short or Long Rest)",
+                "entries": [
+                    "If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Tusk",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 8,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-centipede": {
+        "name": "Giant Centipede",
+        "size": "S",
+        "ac": {
+            "ac": 13,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 4,
+            "formula": "1d6 + 1"
+        },
+        "speed": {
+            "walk": 30,
+            "climb": 30
+        },
+        "str": 5,
+        "dex": 14,
+        "con": 12,
+        "int": 1,
+        "cha": 3,
+        "wis": 7,
+        "senses": [
+            "blindsight 30 ft."
+        ],
+        "cr": "1/4",
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage, and the target must succeed on a {@dc 11} Constitution saving throw or take 10 ({@damage 3d6}) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+                ]
+            }
+        ],
+        "passive": 8,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-constrictor-snake": {
+        "name": "Giant Constrictor Snake",
+        "size": "H",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 60,
+            "formula": "8d12 + 8"
+        },
+        "speed": {
+            "walk": 30,
+            "swim": 30
+        },
+        "str": 19,
+        "dex": 14,
+        "con": 12,
+        "int": 1,
+        "cha": 3,
+        "wis": 10,
+        "skill": {
+            "perception": "+2"
+        },
+        "senses": [
+            "blindsight 10 ft."
+        ],
+        "cr": "2",
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 10 ft., one creature. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+                ]
+            },
+            {
+                "name": "Constrict",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the creature is {@condition restrained}, and the snake can't constrict another target."
+                ]
+            }
+        ],
+        "passive": 12,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-crab": {
+        "name": "Giant Crab",
+        "size": "M",
+        "ac": {
+            "ac": 15,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 13,
+            "formula": "3d8"
+        },
+        "speed": {
+            "walk": 30,
+            "swim": 30
+        },
+        "str": 13,
+        "dex": 15,
+        "con": 11,
+        "int": 1,
+        "cha": 3,
+        "wis": 9,
+        "skill": {
+            "stealth": "+4"
+        },
+        "senses": [
+            "blindsight 30 ft."
+        ],
+        "cr": "1/8",
+        "trait": [
+            {
+                "name": "Amphibious",
+                "entries": [
+                    "The crab can breathe air and water."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Claw",
+                "entries": [
+                    "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 11}). The crab has two claws, each of which can grapple only one target."
+                ]
+            }
+        ],
+        "passive": 9,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-eagle": {
+        "name": "Giant Eagle",
+        "size": "L",
+        "ac": {
+            "ac": 13,
+            "from": ""
+        },
+        "hp": {
+            "average": 26,
+            "formula": "4d10 + 4"
+        },
+        "speed": {
+            "walk": 10,
+            "fly": 80
+        },
+        "str": 16,
+        "dex": 17,
+        "con": 13,
+        "int": 8,
+        "cha": 10,
+        "wis": 14,
+        "skill": {
+            "perception": "+4"
+        },
+        "languages": [
+            "Giant Eagle",
+            "understands Common and Auran but can't speak them"
+        ],
+        "cr": "1",
+        "trait": [
+            {
+                "name": "Keen Sight",
+                "entries": [
+                    "The eagle has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Multiattack",
+                "entries": [
+                    "The eagle makes two attacks: one with its beak and one with its talons."
+                ]
+            },
+            {
+                "name": "Beak",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+                ]
+            },
+            {
+                "name": "Talons",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 14,
+        "alignment": [
+            "N",
+            "G"
+        ],
+        "type": "beast"
+    },
+    "giant-elk": {
+        "name": "Giant Elk",
+        "size": "H",
+        "ac": {
+            "ac": 14,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 42,
+            "formula": "5d12 + 10"
+        },
+        "speed": {
+            "walk": 60
+        },
+        "str": 19,
+        "dex": 16,
+        "con": 14,
+        "int": 7,
+        "cha": 10,
+        "wis": 14,
+        "skill": {
+            "perception": "+4"
+        },
+        "languages": [
+            "Giant Elk",
+            "understands Common, Elvish, Sylvan but can't speak them"
+        ],
+        "cr": "2",
+        "trait": [
+            {
+                "name": "Charge",
+                "entries": [
+                    "If the elk moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ({@dice 2d6}) damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Ram",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+                ]
+            },
+            {
+                "name": "Hooves",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 5 ft., one {@condition prone} creature. {@h}22 ({@damage 4d8 + 4}) bludgeoning damage."
+                ]
+            }
+        ],
+        "passive": 14,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-fire-beetle": {
+        "name": "Giant Fire Beetle",
+        "size": "S",
+        "ac": {
+            "ac": 13,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 4,
+            "formula": "1d6 + 1"
+        },
+        "speed": {
+            "walk": 30
+        },
+        "str": 8,
+        "dex": 10,
+        "con": 12,
+        "int": 1,
+        "cha": 3,
+        "wis": 7,
+        "senses": [
+            "blindsight 30 ft."
+        ],
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Illumination",
+                "entries": [
+                    "The beetle sheds bright light in a 10-foot radius and dim light for an additional 10 ft.."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d6 - 1}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 8,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-frog": {
+        "name": "Giant Frog",
+        "size": "M",
+        "ac": {
+            "ac": 11,
+            "from": ""
+        },
+        "hp": {
+            "average": 18,
+            "formula": "4d8"
+        },
+        "speed": {
+            "walk": 30,
+            "swim": 30
+        },
+        "str": 12,
+        "dex": 13,
+        "con": 11,
+        "int": 2,
+        "cha": 3,
+        "wis": 10,
+        "skill": {
+            "perception": "+2",
+            "stealth": "+3"
+        },
+        "senses": [
+            "darkvision 30 ft."
+        ],
+        "cr": "1/4",
+        "trait": [
+            {
+                "name": "Amphibious",
+                "entries": [
+                    "The frog can breathe air and water"
+                ]
+            },
+            {
+                "name": "Standing Leap",
+                "entries": [
+                    "The frog's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage, and the target is {@condition grappled} (escape {@dc 11}). Until this grapple ends, the target is {@condition restrained}, and the frog can't bite another target."
+                ]
+            },
+            {
+                "name": "Swallow",
+                "entries": [
+                    "The frog makes one bite attack against a Small or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the frog, and it takes 5 ({@damage 2d4}) acid damage at the start of each of the frog's turns. The frog can have only one target swallowed at a time. If the frog dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 5 feet of movement, exiting {@condition prone}."
+                ]
+            }
+        ],
+        "passive": 12,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-goat": {
+        "name": "Giant Goat",
+        "size": "L",
+        "ac": {
+            "ac": 11,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 19,
+            "formula": "3d10 + 3"
+        },
+        "speed": {
+            "walk": 40
+        },
+        "str": 17,
+        "dex": 11,
+        "con": 12,
+        "int": 3,
+        "cha": 6,
+        "wis": 12,
+        "cr": "1/2",
+        "trait": [
+            {
+                "name": "Charge",
+                "entries": [
+                    "If the goat moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 ({@damage 2d4}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+                ]
+            },
+            {
+                "name": "Sure-Footed",
+                "entries": [
+                    "The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it {@condition prone}."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Ram",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) bludgeoning damage."
+                ]
+            }
+        ],
+        "passive": 11,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-hyena": {
+        "name": "Giant Hyena",
+        "size": "L",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 45,
+            "formula": "6d10 + 12"
+        },
+        "speed": {
+            "walk": 50
+        },
+        "str": 16,
+        "dex": 14,
+        "con": 14,
+        "int": 2,
+        "cha": 7,
+        "wis": 12,
+        "skill": {
+            "perception": "+3"
+        },
+        "cr": "1",
+        "trait": [
+            {
+                "name": "Rampage",
+                "entries": [
+                    "When the hyena reduces a creature to 0 hit points with a melee attack on its turn, the hyena can take a bonus action to move up to half its speed and make a bite attack."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-lizard": {
+        "name": "Giant Lizard",
+        "size": "L",
+        "ac": {
+            "ac": 12,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 19,
+            "formula": "3d10 + 3"
+        },
+        "speed": {
+            "walk": 30,
+            "climb": 30
+        },
+        "str": 15,
+        "dex": 12,
+        "con": 13,
+        "int": 2,
+        "cha": 5,
+        "wis": 10,
+        "senses": [
+            "darkvision 30 ft."
+        ],
+        "cr": "1/4",
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-octopus": {
+        "name": "Giant Octopus",
+        "size": "L",
+        "ac": {
+            "ac": 11,
+            "from": ""
+        },
+        "hp": {
+            "average": 52,
+            "formula": "8d10 + 8"
+        },
+        "speed": {
+            "walk": 10,
+            "swim": 60
+        },
+        "str": 17,
+        "dex": 13,
+        "con": 13,
+        "int": 4,
+        "cha": 4,
+        "wis": 10,
+        "skill": {
+            "perception": "+4",
+            "stealth": "+5"
+        },
+        "senses": [
+            "darkvision 60 ft."
+        ],
+        "cr": "1",
+        "trait": [
+            {
+                "name": "Hold Breath",
+                "entries": [
+                    "While out of water, the octopus can hold its breath for 1 hour."
+                ]
+            },
+            {
+                "name": "Underwater Camouflage",
+                "entries": [
+                    "The octopus has advantage on Dexterity ({@skill Stealth}) checks made while underwater."
+                ]
+            },
+            {
+                "name": "Water Breathing",
+                "entries": [
+                    "The octopus can breathe only underwater."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Tentacles",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 15 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage. If the target is a creature, it is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the target is {@condition restrained}, and the octopus can't use its tentacles on another target."
+                ]
+            },
+            {
+                "name": "Ink Cloud (Recharges after a Short or Long Rest)",
+                "entries": [
+                    "A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action."
+                ]
+            }
+        ],
+        "passive": 14,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-owl": {
+        "name": "Giant Owl",
+        "size": "L",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 19,
+            "formula": "3d10 + 3"
+        },
+        "speed": {
+            "walk": 5,
+            "fly": 60
+        },
+        "str": 13,
+        "dex": 15,
+        "con": 12,
+        "int": 8,
+        "cha": 10,
+        "wis": 13,
+        "skill": {
+            "perception": "+5",
+            "stealth": "+4"
+        },
+        "senses": [
+            "darkvision 120 ft."
+        ],
+        "languages": [
+            "Giant Owl",
+            "understands Common, Elvish, and Sylvan but can't speak them"
+        ],
+        "cr": "1/4",
+        "trait": [
+            {
+                "name": "Flyby",
+                "entries": [
+                    "The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+                ]
+            },
+            {
+                "name": "Keen Hearing and Sight",
+                "entries": [
+                    "The owl has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Talons",
+                "entries": [
+                    "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d6 + 1}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 15,
+        "alignment": [
+            "N"
+        ],
+        "type": "beast"
+    },
+    "giant-poisonous-snake": {
+        "name": "Giant Poisonous Snake",
+        "size": "M",
+        "ac": {
+            "ac": 14,
+            "from": ""
+        },
+        "hp": {
+            "average": 11,
+            "formula": "2d8 + 2"
+        },
+        "speed": {
+            "walk": 30,
+            "swim": 30
+        },
+        "str": 10,
+        "dex": 18,
+        "con": 13,
+        "int": 2,
+        "cha": 3,
+        "wis": 10,
+        "skill": {
+            "perception": "+2"
+        },
+        "senses": [
+            "blindsight 10 ft."
+        ],
+        "cr": "1/4",
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save, or half as much damage on a successful one."
+                ]
+            }
+        ],
+        "passive": 12,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-rat": {
+        "name": "Giant Rat",
+        "size": "S",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 7,
+            "formula": "2d6"
+        },
+        "speed": {
+            "walk": 30
+        },
+        "str": 7,
+        "dex": 15,
+        "con": 11,
+        "int": 2,
+        "cha": 4,
+        "wis": 10,
+        "senses": [
+            "darkvision 60 ft."
+        ],
+        "cr": "1/8",
+        "trait": [
+            {
+                "name": "Keen Smell",
+                "entries": [
+                    "The rat has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+                ]
+            },
+            {
+                "name": "Pack Tactics",
+                "entries": [
+                    "The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-sea-horse": {
+        "name": "Giant Sea Horse",
+        "size": "L",
+        "ac": {
+            "ac": 13,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 16,
+            "formula": "3d10"
+        },
+        "speed": {
+            "walk": 0,
+            "swim": 40
+        },
+        "str": 12,
+        "dex": 15,
+        "con": 11,
+        "int": 2,
+        "cha": 5,
+        "wis": 12,
+        "cr": "1/2",
+        "trait": [
+            {
+                "name": "Charge",
+                "entries": [
+                    "If the sea horse moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ({@damage 2d6}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 11} Strength saving throw or be knocked {@condition prone}."
+                ]
+            },
+            {
+                "name": "Water Breathing",
+                "entries": [
+                    "The sea horse can breathe only underwater."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Ram",
+                "entries": [
+                    "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage."
+                ]
+            }
+        ],
+        "passive": 11,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-spider": {
+        "name": "Giant Spider",
+        "size": "L",
+        "ac": {
+            "ac": 14,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 26,
+            "formula": "4d10 + 4"
+        },
+        "speed": {
+            "walk": 30,
+            "climb": 30
+        },
+        "str": 14,
+        "dex": 16,
+        "con": 12,
+        "int": 2,
+        "cha": 4,
+        "wis": 11,
+        "skill": {
+            "stealth": "+7"
+        },
+        "senses": [
+            "blindsight 10 ft.",
+            "darkvision 60 ft."
+        ],
+        "cr": "1",
+        "trait": [
+            {
+                "name": "Spider Climb",
+                "entries": [
+                    "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+                ]
+            },
+            {
+                "name": "Web Sense",
+                "entries": [
+                    "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+                ]
+            },
+            {
+                "name": "Web Walker",
+                "entries": [
+                    "The spider ignores movement restrictions caused by webbing."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d8 + 3}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 9 ({@damage 2d8}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+                ]
+            },
+            {
+                "name": "Web {@recharge 5}",
+                "entries": [
+                    "{@atk rw} {@hit 5} to hit, range 30/60 ft., one creature. {@h}The target is {@condition restrained} by webbing. As an action, the {@condition restrained} target can make a {@dc 12} Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-toad": {
+        "name": "Giant Toad",
+        "size": "L",
+        "ac": {
+            "ac": 11,
+            "from": ""
+        },
+        "hp": {
+            "average": 39,
+            "formula": "6d10 + 6"
+        },
+        "speed": {
+            "walk": 20,
+            "swim": 40
+        },
+        "str": 15,
+        "dex": 13,
+        "con": 13,
+        "int": 2,
+        "cha": 3,
+        "wis": 10,
+        "senses": [
+            "darkvision 30 ft."
+        ],
+        "cr": "1",
+        "trait": [
+            {
+                "name": "Amphibious",
+                "entries": [
+                    "The toad can breathe air and water"
+                ]
+            },
+            {
+                "name": "Standing Leap",
+                "entries": [
+                    "The toad's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage plus 5 ({@damage 1d10}) poison damage, and the target is {@condition grappled} (escape {@dc 13}). Until this grapple ends, the target is {@condition restrained}, and the toad can't bite another target."
+                ]
+            },
+            {
+                "name": "Swallow",
+                "entries": [
+                    "The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the toad, and it takes 10 ({@damage 3d6}) acid damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time.",
+                    "If the toad dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 5 feet of movement, exiting {@condition prone}."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-vulture": {
+        "name": "Giant Vulture",
+        "size": "L",
+        "ac": {
+            "ac": 10,
+            "from": ""
+        },
+        "hp": {
+            "average": 22,
+            "formula": "3d10 + 6"
+        },
+        "speed": {
+            "walk": 10,
+            "fly": 60
+        },
+        "str": 15,
+        "dex": 10,
+        "con": 15,
+        "int": 6,
+        "cha": 7,
+        "wis": 12,
+        "skill": {
+            "perception": "+3"
+        },
+        "languages": [
+            "understands Common but can't speak"
+        ],
+        "cr": "1",
+        "trait": [
+            {
+                "name": "Keen Sight and Smell",
+                "entries": [
+                    "The vulture has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
+                ]
+            },
+            {
+                "name": "Pack Tactics",
+                "entries": [
+                    "The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Multiattack",
+                "entries": [
+                    "The vulture makes two attacks: one with its beak and one with its talons."
+                ]
+            },
+            {
+                "name": "Beak",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage."
+                ]
+            },
+            {
+                "name": "Talons",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "N",
+            "E"
+        ],
+        "type": "beast"
+    },
+    "giant-wasp": {
+        "name": "Giant Wasp",
+        "size": "M",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 13,
+            "formula": "3d8"
+        },
+        "speed": {
+            "walk": 10,
+            "fly": 50
+        },
+        "str": 10,
+        "dex": 14,
+        "con": 10,
+        "int": 1,
+        "cha": 3,
+        "wis": 10,
+        "cr": "1/2",
+        "action": [
+            {
+                "name": "Sting",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-weasel": {
+        "name": "Giant Weasel",
+        "size": "M",
+        "ac": {
+            "ac": 13,
+            "from": ""
+        },
+        "hp": {
+            "average": 9,
+            "formula": "2d8"
+        },
+        "speed": {
+            "walk": 40
+        },
+        "str": 11,
+        "dex": 16,
+        "con": 10,
+        "int": 4,
+        "cha": 5,
+        "wis": 12,
+        "skill": {
+            "perception": "+3",
+            "stealth": "+5"
+        },
+        "senses": [
+            "darkvision 60 ft."
+        ],
+        "cr": "1/8",
+        "trait": [
+            {
+                "name": "Keen Hearing and Smell",
+                "entries": [
+                    "The weasel has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "giant-wolf-spider": {
+        "name": "Giant Wolf Spider",
+        "size": "M",
+        "ac": {
+            "ac": 13,
+            "from": ""
+        },
+        "hp": {
+            "average": 11,
+            "formula": "2d8 + 2"
+        },
+        "speed": {
+            "walk": 40,
+            "climb": 40
+        },
+        "str": 12,
+        "dex": 16,
+        "con": 13,
+        "int": 3,
+        "cha": 4,
+        "wis": 12,
+        "skill": {
+            "perception": "+3",
+            "stealth": "+7"
+        },
+        "senses": [
+            "blindsight 10 ft.",
+            "darkvision 60 ft."
+        ],
+        "cr": "1/4",
+        "trait": [
+            {
+                "name": "Spider Climb",
+                "entries": [
+                    "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+                ]
+            },
+            {
+                "name": "Web Sense",
+                "entries": [
+                    "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+                ]
+            },
+            {
+                "name": "Web Walker",
+                "entries": [
+                    "The spider ignores movement restrictions caused by webbing."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d6 + 1}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 7 ({@damage 2d6}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "goat": {
+        "name": "Goat",
+        "size": "M",
+        "ac": {
+            "ac": 10,
+            "from": ""
+        },
+        "hp": {
+            "average": 4,
+            "formula": "1d8"
+        },
+        "speed": {
+            "walk": 40
+        },
+        "str": 12,
+        "dex": 10,
+        "con": 11,
+        "int": 2,
+        "cha": 5,
+        "wis": 10,
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Charge",
+                "entries": [
+                    "If the goat moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 2 ({@damage 1d4}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 10} Strength saving throw or be knocked {@condition prone}."
+                ]
+            },
+            {
+                "name": "Sure-Footed",
+                "entries": [
+                    "The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it {@condition prone}."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Ram",
+                "entries": [
+                    "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) bludgeoning damage."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "hawk": {
+        "name": "Hawk",
+        "size": "T",
+        "ac": {
+            "ac": 13,
+            "from": ""
+        },
+        "hp": {
+            "average": 1,
+            "formula": "1d4 - 1"
+        },
+        "speed": {
+            "walk": 10,
+            "fly": 60
+        },
+        "str": 5,
+        "dex": 16,
+        "con": 8,
+        "int": 2,
+        "cha": 6,
+        "wis": 14,
+        "skill": {
+            "perception": "+4"
+        },
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Keen Sight",
+                "entries": [
+                    "The hawk has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Talons",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}1 slashing damage."
+                ]
+            }
+        ],
+        "passive": 14,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "hunter-shark": {
+        "name": "Hunter Shark",
+        "size": "L",
+        "ac": {
+            "ac": 12,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 45,
+            "formula": "6d10 + 12"
+        },
+        "speed": {
+            "swim": 40
+        },
+        "str": 18,
+        "dex": 13,
+        "con": 15,
+        "int": 1,
+        "cha": 4,
+        "wis": 10,
+        "skill": {
+            "perception": "+2"
+        },
+        "senses": [
+            "blindsight 30 ft."
+        ],
+        "cr": "2",
+        "trait": [
+            {
+                "name": "Blood Frenzy",
+                "entries": [
+                    "The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+                ]
+            },
+            {
+                "name": "Water Breathing",
+                "entries": [
+                    "The shark can breathe only underwater."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage."
+                ]
+            }
+        ],
+        "passive": 12,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "hyena": {
+        "name": "Hyena",
+        "size": "M",
+        "ac": {
+            "ac": 11,
+            "from": ""
+        },
+        "hp": {
+            "average": 5,
+            "formula": "1d8 + 1"
+        },
+        "speed": {
+            "walk": 50
+        },
+        "str": 11,
+        "dex": 13,
+        "con": 12,
+        "int": 2,
+        "cha": 5,
+        "wis": 12,
+        "skill": {
+            "perception": "+3"
+        },
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Pack Tactics",
+                "entries": [
+                    "The hyena has advantage on an attack roll against a creature if at least one of the hyena's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) piercing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "jackal": {
+        "name": "Jackal",
+        "size": "S",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 3,
+            "formula": "1d6"
+        },
+        "speed": {
+            "walk": 40
+        },
+        "str": 8,
+        "dex": 15,
+        "con": 11,
+        "int": 3,
+        "cha": 6,
+        "wis": 12,
+        "skill": {
+            "perception": "+3"
+        },
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Keen Hearing and Smell",
+                "entries": [
+                    "The jackal has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+                ]
+            },
+            {
+                "name": "Pack Tactics",
+                "entries": [
+                    "The jackal has advantage on an attack roll against a creature if at least one of the jackal's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d4 - 1}) piercing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "lion": {
+        "name": "Lion",
+        "size": "L",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 26,
+            "formula": "4d10 + 4"
+        },
+        "speed": {
+            "walk": 50
+        },
+        "str": 17,
+        "dex": 15,
+        "con": 13,
+        "int": 3,
+        "cha": 8,
+        "wis": 12,
+        "skill": {
+            "perception": "+3",
+            "stealth": "+6"
+        },
+        "cr": "1",
+        "trait": [
+            {
+                "name": "Keen Smell",
+                "entries": [
+                    "The lion has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+                ]
+            },
+            {
+                "name": "Pack Tactics",
+                "entries": [
+                    "The lion has advantage on an attack roll against a creature if at least one of the lion's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+                ]
+            },
+            {
+                "name": "Pounce",
+                "entries": [
+                    "If the lion moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the lion can make one bite attack against it as a bonus action."
+                ]
+            },
+            {
+                "name": "Running Leap",
+                "entries": [
+                    "With a 10-foot running start, the lion can long jump up to 25 feet."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+                ]
+            },
+            {
+                "name": "Claw",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "lizard": {
+        "name": "Lizard",
+        "size": "T",
+        "ac": {
+            "ac": 10,
+            "from": ""
+        },
+        "hp": {
+            "average": 2,
+            "formula": "1d4"
+        },
+        "speed": {
+            "walk": 20,
+            "climb": 20
+        },
+        "str": 2,
+        "dex": 11,
+        "con": 10,
+        "int": 1,
+        "cha": 3,
+        "wis": 8,
+        "senses": [
+            "darkvision 30 ft."
+        ],
+        "cr": "0",
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+                ]
+            }
+        ],
+        "passive": 9,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "mastiff": {
+        "name": "Mastiff",
+        "size": "M",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 5,
+            "formula": "1d8 + 1"
+        },
+        "speed": {
+            "walk": 40
+        },
+        "str": 13,
+        "dex": 14,
+        "con": 12,
+        "int": 3,
+        "cha": 7,
+        "wis": 12,
+        "skill": {
+            "perception": "+3"
+        },
+        "cr": "1/8",
+        "trait": [
+            {
+                "name": "Keen Hearing and Smell",
+                "entries": [
+                    "The mastiff has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) piercing damage. If the target is a creature, it must succeed on a {@dc 11} Strength saving throw or be knocked {@condition prone}."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "mule": {
+        "name": "Mule",
+        "size": "M",
+        "ac": {
+            "ac": 10,
+            "from": ""
+        },
+        "hp": {
+            "average": 11,
+            "formula": "2d8 + 2"
+        },
+        "speed": {
+            "walk": 40
+        },
+        "str": 14,
+        "dex": 10,
+        "con": 13,
+        "int": 2,
+        "cha": 5,
+        "wis": 10,
+        "cr": "1/8",
+        "trait": [
+            {
+                "name": "Beast of Burden",
+                "entries": [
+                    "The mule is considered to be a Large animal for the purpose of determining its carrying capacity."
+                ]
+            },
+            {
+                "name": "Sure-Footed",
+                "entries": [
+                    "The mule has advantage on Strength and Dexterity saving throws made against effects that would knock it {@condition prone}."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Hooves",
+                "entries": [
+                    "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "octopus": {
+        "name": "Octopus",
+        "size": "S",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 3,
+            "formula": "1d6"
+        },
+        "speed": {
+            "walk": 5,
+            "swim": 30
+        },
+        "str": 4,
+        "dex": 15,
+        "con": 11,
+        "int": 3,
+        "cha": 4,
+        "wis": 10,
+        "skill": {
+            "perception": "+2",
+            "stealth": "+4"
+        },
+        "senses": [
+            "darkvision 30 ft."
+        ],
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Hold Breath",
+                "entries": [
+                    "While out of water, the octopus can hold its breath for 30 minutes."
+                ]
+            },
+            {
+                "name": "Underwater Camouflage",
+                "entries": [
+                    "The octopus has advantage on Dexterity ({@skill Stealth}) checks made while underwater."
+                ]
+            },
+            {
+                "name": "Water Breathing",
+                "entries": [
+                    "The octopus can breathe only underwater."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Tentacles",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 bludgeoning damage, and the target is {@condition grappled} (escape {@dc 10}). Until this grapple ends, the octopus can't use its tentacles on another target."
+                ]
+            },
+            {
+                "name": "Ink Cloud (Recharges after a Short or Long Rest)",
+                "entries": [
+                    "A 5-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action."
+                ]
+            }
+        ],
+        "passive": 12,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "owl": {
+        "name": "Owl",
+        "size": "T",
+        "ac": {
+            "ac": 11,
+            "from": ""
+        },
+        "hp": {
+            "average": 1,
+            "formula": "1d4 - 1"
+        },
+        "speed": {
+            "walk": 5,
+            "fly": 60
+        },
+        "str": 3,
+        "dex": 13,
+        "con": 8,
+        "int": 2,
+        "cha": 7,
+        "wis": 12,
+        "skill": {
+            "perception": "+3",
+            "stealth": "+3"
+        },
+        "senses": [
+            "darkvision 120 ft."
+        ],
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Flyby",
+                "entries": [
+                    "The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+                ]
+            },
+            {
+                "name": "Keen Hearing and Sight",
+                "entries": [
+                    "The owl has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Talons",
+                "entries": [
+                    "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}1 slashing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "panther": {
+        "name": "Panther",
+        "size": "M",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 13,
+            "formula": "3d8"
+        },
+        "speed": {
+            "walk": 50,
+            "climb": 40
+        },
+        "str": 14,
+        "dex": 15,
+        "con": 10,
+        "int": 3,
+        "cha": 7,
+        "wis": 14,
+        "skill": {
+            "perception": "+4",
+            "stealth": "+6"
+        },
+        "cr": "1/4",
+        "trait": [
+            {
+                "name": "Keen Smell",
+                "entries": [
+                    "The panther has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+                ]
+            },
+            {
+                "name": "Pounce",
+                "entries": [
+                    "If the panther moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 12} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the panther can make one bite attack against it as a bonus action."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+                ]
+            },
+            {
+                "name": "Claw",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 14,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "plesiosaurus": {
+        "name": "Plesiosaurus",
+        "size": "L",
+        "ac": {
+            "ac": 13,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 68,
+            "formula": "8d10 + 24"
+        },
+        "speed": {
+            "walk": 20,
+            "swim": 40
+        },
+        "str": 18,
+        "dex": 15,
+        "con": 16,
+        "int": 2,
+        "cha": 5,
+        "wis": 12,
+        "skill": {
+            "perception": "+3",
+            "stealth": "+4"
+        },
+        "cr": "2",
+        "trait": [
+            {
+                "name": "Hold Breath",
+                "entries": [
+                    "The plesiosaurus can hold its breath for 1 hour."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}14 ({@damage 3d6 + 4}) piercing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "poisonous-snake": {
+        "name": "Poisonous Snake",
+        "size": "T",
+        "ac": {
+            "ac": 13,
+            "from": ""
+        },
+        "hp": {
+            "average": 2,
+            "formula": "1d4"
+        },
+        "speed": {
+            "walk": 30,
+            "swim": 30
+        },
+        "str": 2,
+        "dex": 16,
+        "con": 11,
+        "int": 1,
+        "cha": 3,
+        "wis": 10,
+        "senses": [
+            "blindsight 10 ft."
+        ],
+        "cr": "1/8",
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}1 piercing damage, and the target must make a {@dc 10} Constitution saving throw, taking 5 ({@damage 2d4}) poison damage on a failed save, or half as much damage on a successful one."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "polar-bear": {
+        "name": "Polar Bear",
+        "size": "L",
+        "ac": {
+            "ac": 12,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 42,
+            "formula": "5d10 + 15"
+        },
+        "speed": {
+            "walk": 40,
+            "swim": 30
+        },
+        "str": 20,
+        "dex": 10,
+        "con": 16,
+        "int": 2,
+        "cha": 7,
+        "wis": 13,
+        "skill": {
+            "perception": "+3"
+        },
+        "cr": "2",
+        "trait": [
+            {
+                "name": "Keen Smell",
+                "entries": [
+                    "The bear has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Multiattack",
+                "entries": [
+                    "The bear makes two attacks: one with its bite and one with its claws."
+                ]
+            },
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) piercing damage."
+                ]
+            },
+            {
+                "name": "Claws",
+                "entries": [
+                    "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "pony": {
+        "name": "Pony",
+        "size": "M",
+        "ac": {
+            "ac": 10,
+            "from": ""
+        },
+        "hp": {
+            "average": 11,
+            "formula": "2d8 + 2"
+        },
+        "speed": {
+            "walk": 40
+        },
+        "str": 15,
+        "dex": 10,
+        "con": 13,
+        "int": 2,
+        "cha": 7,
+        "wis": 11,
+        "cr": "1/8",
+        "action": [
+            {
+                "name": "Hooves",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) bludgeoning damage."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "pteranodon": {
+        "name": "Pteranodon",
+        "size": "M",
+        "ac": {
+            "ac": 13,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 13,
+            "formula": "3d8"
+        },
+        "speed": {
+            "walk": 10,
+            "fly": 60
+        },
+        "str": 12,
+        "dex": 15,
+        "con": 10,
+        "int": 2,
+        "cha": 5,
+        "wis": 9,
+        "skill": {
+            "perception": "+1"
+        },
+        "cr": "1/4",
+        "trait": [
+            {
+                "name": "Flyby",
+                "entries": [
+                    "The pteranodon doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}6 ({@damage 2d4 + 1}) piercing damage"
+                ]
+            }
+        ],
+        "passive": 11,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "quipper": {
+        "name": "Quipper",
+        "size": "T",
+        "ac": {
+            "ac": 13,
+            "from": ""
+        },
+        "hp": {
+            "average": 1,
+            "formula": "1d4 - 1"
+        },
+        "speed": {
+            "swim": 40
+        },
+        "str": 2,
+        "dex": 16,
+        "con": 9,
+        "int": 1,
+        "cha": 2,
+        "wis": 7,
+        "senses": [
+            "darkvision 60 ft."
+        ],
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Blood Frenzy",
+                "entries": [
+                    "The quipper has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+                ]
+            },
+            {
+                "name": "Water Breathing",
+                "entries": [
+                    "The quipper can breathe only underwater."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+                ]
+            }
+        ],
+        "passive": 8,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "rat": {
+        "name": "Rat",
+        "size": "T",
+        "ac": {
+            "ac": 10,
+            "from": ""
+        },
+        "hp": {
+            "average": 1,
+            "formula": "1d4 - 1"
+        },
+        "speed": {
+            "walk": 20
+        },
+        "str": 2,
+        "dex": 11,
+        "con": 9,
+        "int": 2,
+        "cha": 4,
+        "wis": 10,
+        "senses": [
+            "darkvision 30 ft."
+        ],
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Keen Smell",
+                "entries": [
+                    "The rat has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "raven": {
+        "name": "Raven",
+        "size": "T",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 1,
+            "formula": "1d4 - 1"
+        },
+        "speed": {
+            "walk": 10,
+            "fly": 50
+        },
+        "str": 2,
+        "dex": 14,
+        "con": 8,
+        "int": 2,
+        "cha": 6,
+        "wis": 12,
+        "skill": {
+            "perception": "+3"
+        },
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Mimicry",
+                "entries": [
+                    "The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Beak",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "reef-shark": {
+        "name": "Reef Shark",
+        "size": "M",
+        "ac": {
+            "ac": 12,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 22,
+            "formula": "4d8 + 4"
+        },
+        "speed": {
+            "swim": 40
+        },
+        "str": 14,
+        "dex": 13,
+        "con": 13,
+        "int": 1,
+        "cha": 4,
+        "wis": 10,
+        "skill": {
+            "perception": "+2"
+        },
+        "senses": [
+            "blindsight 30 ft."
+        ],
+        "cr": "1/2",
+        "trait": [
+            {
+                "name": "Pack Tactics",
+                "entries": [
+                    "The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+                ]
+            },
+            {
+                "name": "Water Breathing",
+                "entries": [
+                    "The shark can breathe only underwater."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+                ]
+            }
+        ],
+        "passive": 12,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "rhinoceros": {
+        "name": "Rhinoceros",
+        "size": "L",
+        "ac": {
+            "ac": 11,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 45,
+            "formula": "6d10 + 12"
+        },
+        "speed": {
+            "walk": 40
+        },
+        "str": 21,
+        "dex": 8,
+        "con": 15,
+        "int": 2,
+        "cha": 6,
+        "wis": 12,
+        "cr": "2",
+        "trait": [
+            {
+                "name": "Charge",
+                "entries": [
+                    "If the rhinoceros moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 ({@damage 2d8}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Gore",
+                "entries": [
+                    "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+                ]
+            }
+        ],
+        "passive": 11,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "riding-horse": {
+        "name": "Riding Horse",
+        "size": "L",
+        "ac": {
+            "ac": 10,
+            "from": ""
+        },
+        "hp": {
+            "average": 13,
+            "formula": "2d10 + 2"
+        },
+        "speed": {
+            "walk": 60
+        },
+        "str": 16,
+        "dex": 10,
+        "con": 12,
+        "int": 2,
+        "cha": 7,
+        "wis": 11,
+        "cr": "1/4",
+        "action": [
+            {
+                "name": "Hooves",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) bludgeoning damage."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "saber-toothed-tiger": {
+        "name": "Saber-Toothed Tiger",
+        "size": "L",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 52,
+            "formula": "7d10 + 14"
+        },
+        "speed": {
+            "walk": 40
+        },
+        "str": 18,
+        "dex": 14,
+        "con": 15,
+        "int": 3,
+        "cha": 8,
+        "wis": 12,
+        "skill": {
+            "perception": "+3",
+            "stealth": "+6"
+        },
+        "cr": "2",
+        "trait": [
+            {
+                "name": "Keen Smell",
+                "entries": [
+                    "The tiger has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+                ]
+            },
+            {
+                "name": "Pounce",
+                "entries": [
+                    "If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the tiger can make one bite attack against it as a bonus action."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
+                ]
+            },
+            {
+                "name": "Claw",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "scorpion": {
+        "name": "Scorpion",
+        "size": "T",
+        "ac": {
+            "ac": 11,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 1,
+            "formula": "1d4 - 1"
+        },
+        "speed": {
+            "walk": 10
+        },
+        "str": 2,
+        "dex": 11,
+        "con": 8,
+        "int": 1,
+        "cha": 2,
+        "wis": 8,
+        "senses": [
+            "blindsight 10 ft."
+        ],
+        "cr": "0",
+        "action": [
+            {
+                "name": "Sting",
+                "entries": [
+                    "{@atk mw} {@hit 2} to hit, reach 5 ft., one creature. {@h}1 piercing damage, and the target must make a {@dc 9} Constitution saving throw, taking 4 ({@damage 1d8}) poison damage on a failed save, or half as much damage on a successful one."
+                ]
+            }
+        ],
+        "passive": 9,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "sea-horse": {
+        "name": "Sea Horse",
+        "size": "T",
+        "ac": {
+            "ac": 11,
+            "from": ""
+        },
+        "hp": {
+            "average": 1,
+            "formula": "1d4 - 1"
+        },
+        "speed": {
+            "swim": 20
+        },
+        "str": 1,
+        "dex": 12,
+        "con": 8,
+        "int": 1,
+        "cha": 2,
+        "wis": 10,
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Water Breathing",
+                "entries": [
+                    "The sea horse can breathe only underwater."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "spider": {
+        "name": "Spider",
+        "size": "T",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 1,
+            "formula": "1d4 - 1"
+        },
+        "speed": {
+            "walk": 20,
+            "climb": 20
+        },
+        "str": 2,
+        "dex": 14,
+        "con": 8,
+        "int": 1,
+        "cha": 2,
+        "wis": 10,
+        "skill": {
+            "stealth": "+4"
+        },
+        "senses": [
+            "darkvision 30 ft."
+        ],
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Spider Climb",
+                "entries": [
+                    "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+                ]
+            },
+            {
+                "name": "Web Sense",
+                "entries": [
+                    "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+                ]
+            },
+            {
+                "name": "Web Walker",
+                "entries": [
+                    "The spider ignores movement restrictions caused by webbing."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}1 piercing damage, and the target must succeed on a {@dc 9} Constitution saving throw or take 2 ({@damage 1d4}) poison damage."
+                ]
+            }
+        ],
+        "passive": 10,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "stirge": {
+        "name": "Stirge",
+        "size": "T",
+        "ac": {
+            "ac": 14,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 2,
+            "formula": "1d4"
+        },
+        "speed": {
+            "walk": 10,
+            "fly": 40
+        },
+        "str": 4,
+        "dex": 16,
+        "con": 11,
+        "int": 2,
+        "cha": 6,
+        "wis": 8,
+        "senses": [
+            "darkvision 60 ft."
+        ],
+        "cr": "1/8",
+        "action": [
+            {
+                "name": "Blood Drain",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d4 + 3}) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 ({@dice 1d4 + 3}) hit points due to blood loss.",
+                    "The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge."
+                ]
+            }
+        ],
+        "passive": 9,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "tiger": {
+        "name": "Tiger",
+        "size": "L",
+        "ac": {
+            "ac": 12,
+            "from": ""
+        },
+        "hp": {
+            "average": 37,
+            "formula": "5d10 + 10"
+        },
+        "speed": {
+            "walk": 40
+        },
+        "str": 17,
+        "dex": 15,
+        "con": 14,
+        "int": 3,
+        "cha": 8,
+        "wis": 12,
+        "skill": {
+            "perception": "+3",
+            "stealth": "+6"
+        },
+        "senses": [
+            "darkvision 60 ft."
+        ],
+        "cr": "1",
+        "trait": [
+            {
+                "name": "Keen Smell",
+                "entries": [
+                    "The tiger has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+                ]
+            },
+            {
+                "name": "Pounce",
+                "entries": [
+                    "If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the tiger can make one bite attack against it as a bonus action."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+                ]
+            },
+            {
+                "name": "Claw",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "vulture": {
+        "name": "Vulture",
+        "size": "M",
+        "ac": {
+            "ac": 10,
+            "from": ""
+        },
+        "hp": {
+            "average": 5,
+            "formula": "1d8 + 1"
+        },
+        "speed": {
+            "walk": 10,
+            "fly": 50
+        },
+        "str": 7,
+        "dex": 10,
+        "con": 13,
+        "int": 2,
+        "cha": 4,
+        "wis": 12,
+        "skill": {
+            "perception": "+3"
+        },
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Keen Sight and Smell",
+                "entries": [
+                    "The vulture has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
+                ]
+            },
+            {
+                "name": "Pack Tactics",
+                "entries": [
+                    "The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Beak",
+                "entries": [
+                    "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) piercing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "warhorse": {
+        "name": "Warhorse",
+        "size": "L",
+        "ac": {
+            "ac": 11,
+            "from": ""
+        },
+        "hp": {
+            "average": 19,
+            "formula": "3d10 + 3"
+        },
+        "speed": {
+            "walk": 60
+        },
+        "str": 18,
+        "dex": 12,
+        "con": 13,
+        "int": 2,
+        "cha": 7,
+        "wis": 12,
+        "cr": "1/2",
+        "trait": [
+            {
+                "name": "Trampling Charge",
+                "entries": [
+                    "If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the horse can make another attack with its hooves against it as a bonus action."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Hooves",
+                "entries": [
+                    "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+                ]
+            }
+        ],
+        "passive": 11,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "weasel": {
+        "name": "Weasel",
+        "size": "T",
+        "ac": {
+            "ac": 13,
+            "from": ""
+        },
+        "hp": {
+            "average": 1,
+            "formula": "1d4 - 1"
+        },
+        "speed": {
+            "walk": 30
+        },
+        "str": 3,
+        "dex": 16,
+        "con": 8,
+        "int": 2,
+        "cha": 3,
+        "wis": 12,
+        "skill": {
+            "perception": "+3",
+            "stealth": "+5"
+        },
+        "cr": "0",
+        "trait": [
+            {
+                "name": "Keen Hearing and Smell",
+                "entries": [
+                    "The weasel has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}1 piercing damage."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    },
+    "wolf": {
+        "name": "Wolf",
+        "size": "M",
+        "ac": {
+            "ac": 13,
+            "from": "natural armor"
+        },
+        "hp": {
+            "average": 11,
+            "formula": "2d8 + 2"
+        },
+        "speed": {
+            "walk": 40
+        },
+        "str": 12,
+        "dex": 15,
+        "con": 12,
+        "int": 3,
+        "cha": 6,
+        "wis": 12,
+        "skill": {
+            "perception": "+3",
+            "stealth": "+4"
+        },
+        "cr": "1/4",
+        "trait": [
+            {
+                "name": "Keen Hearing and Smell",
+                "entries": [
+                    "The wolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+                ]
+            },
+            {
+                "name": "Pack Tactics",
+                "entries": [
+                    "The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+                ]
+            }
+        ],
+        "action": [
+            {
+                "name": "Bite",
+                "entries": [
+                    "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage. If the target is a creature, it must succeed on a {@dc 11} Strength saving throw or be knocked {@condition prone}."
+                ]
+            }
+        ],
+        "passive": 13,
+        "alignment": [
+            "U"
+        ],
+        "type": "beast"
+    }
+}

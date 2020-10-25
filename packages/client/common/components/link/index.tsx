@@ -1,6 +1,6 @@
 import React from 'react';
 
-type Props = HTMLAnchorElement & {
+type Props = {
     target: HTMLAnchorElement['target'];
     href: HTMLAnchorElement['href'];
     label: string;
@@ -11,7 +11,7 @@ type Props = HTMLAnchorElement & {
 export default function Link({target, href, title, rel, label}: Props) {
     return (
         <a
-            className="transition-colors duration-300 mx-1 font-medium hover:underline"
+            className="transition-colors duration-300 mx-1 font-medium hover:underline link"
             href={href}
             target={target}
             title={title}

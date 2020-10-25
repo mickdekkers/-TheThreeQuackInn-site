@@ -9,6 +9,7 @@
     },
     "dependencies": {
         "@threequackinn/client-common": "*",
+        "@threequackinn/conjure-animals": "*",
         "next": "9.5.5",
         "react": "17.0.1",
         "react-dom": "17.0.1",
