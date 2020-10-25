@@ -1,3 +1,10 @@
+# [@threequackinn/landing-v1.1.0](https://github.com/TheThreeQuackInn/site/compare/@threequackinn/landing-v1.0.1...@threequackinn/landing-v1.1.0) (2020-10-25)
+
+
+### Features
+
+* **conjure-animals:** add conjure animals package ([cc39448](https://github.com/TheThreeQuackInn/site/commit/cc39448497a66e2e77430a229b6bd6917b7e94fb))
+
 # [@threequackinn/landing-v1.0.1](https://github.com/TheThreeQuackInn/site/compare/@threequackinn/landing-v1.0.0...@threequackinn/landing-v1.0.1) (2020-10-25)
 
 
