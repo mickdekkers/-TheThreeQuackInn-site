@@ -1,0 +1,29 @@
+{
+    "extends": ["config:base"],
+    "prHourlyLimit": 0,
+    "prConcurrentLimit": 0,
+    "rebaseWhen": "conflicted",
+    "labels": ["Renovate"],
+    "vulnerabilityAlerts": {
+        "labels": ["High priority"]
+    },
+    "pruneStaleBranches": false,
+    "packageRules": [
+        {
+            "groupName": "eslint",
+            "packagePatterns": ["^eslint"]
+        },
+        {
+            "groupName": "thethreequackinn packages",
+            "packagePatterns": ["^@threequackinn/"]
+        },
+        {
+            "groupName": "babel packages",
+            "packagePatterns": ["^@babel/", "^babel"]
+        },
+        {
+            "groupName": "react packages",
+            "packagePatterns": ["^react", "@types/react"]
+        }
+    ]
+}
