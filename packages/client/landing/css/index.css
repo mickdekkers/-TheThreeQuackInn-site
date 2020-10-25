@@ -23,16 +23,13 @@ body {
     background: linear-gradient(45deg, #11998e 20%, #38ef7d);
 }
 
-.link,
-a {
+.link {
     background-image: linear-gradient(45deg, #11998e, #38ef7d);
-    color: transparent !important;
+    color: transparent;
     background-clip: text;
 }
 
 .link:hover,
-a:hover,
-.link:focus,
-a:focus {
+.link:focus {
     -webkit-text-fill-color: #11998e;
 }

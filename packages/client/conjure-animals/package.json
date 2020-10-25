@@ -1,0 +1,27 @@
+{
+    "name": "@threequackinn/conjure-animals",
+    "version": "1.0.0",
+    "description": "Helper for druids casting conjure animals",
+    "license": "MIT",
+    "private": true,
+    "release": {
+        "branches": [
+            "main"
+        ],
+        "verifyConditions": [
+            "@semantic-release/github"
+        ],
+        "prepare": [
+            "@semantic-release/changelog",
+            "@semantic-release/npm",
+            {
+                "path": "@semantic-release/git",
+                "message": "chore(release): @threequackinn/conjure-animals v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+            }
+        ],
+        "publish": [
+            "@semantic-release/github"
+        ],
+        "success": []
+    }
+}

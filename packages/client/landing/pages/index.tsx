@@ -1,16 +1,11 @@
 import React from 'react';
-import Head from 'next/head';
 import {Fragment} from 'react';
-import Button from '@threequackinn/client-common/components/button';
+import AppHead from '../components/head';
 
-export default function Home() {
+export default function HomePage() {
     return (
         <Fragment>
-            <Head>
-                <title>The Three Quack Inn</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-            <Button className="font-semibold py-2 px-4" label="Test" variant="primary" onClick={console.log} />
+            <AppHead title="The Three Quack Inn" />
         </Fragment>
     );
 }
