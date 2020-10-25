@@ -1,0 +1,69 @@
+{
+    "name": "@threequackinn/monorepo",
+    "version": "1.0.0",
+    "description": "Houses all the files related to thethreequackinn.com website",
+    "main": "index.js",
+    "repository": "git@github.com:TheThreeQuackInn/site.git",
+    "license": "MIT",
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "packages/client/*",
+            "packages/server/*"
+        ]
+    },
+    "scripts": {
+        "semantic-release": "lerna exec --concurrency 1 \"yarn semantic-release -e semantic-release-monorepo\""
+    },
+    "devDependencies": {
+        "@semantic-release/changelog": "5.0.1",
+        "@semantic-release/exec": "5.0.0",
+        "@semantic-release/git": "9.0.0",
+        "@typescript-eslint/eslint-plugin": "4.5.0",
+        "@typescript-eslint/parser": "4.5.0",
+        "cz-conventional-changelog": "3.3.0",
+        "eslint": "7.12.0",
+        "eslint-config-prettier": "6.14.0",
+        "eslint-plugin-prettier": "3.1.4",
+        "husky": "4.3.0",
+        "lerna": "3.22.1",
+        "lint-staged": "10.4.2",
+        "prettier": "2.1.2",
+        "semantic-release": "17.2.1",
+        "semantic-release-monorepo": "7.0.3"
+    },
+    "lint-staged": {
+        "*.{ts,tsx}": [
+            "eslint --cache --fix",
+            "prettier --write"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+        }
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "release": {
+        "verifyConditions": [
+            "@semantic-release/github"
+        ],
+        "prepare": [
+            "@semantic-release/changelog",
+            "@semantic-release/npm",
+            {
+                "path": "@semantic-release/git",
+                "message": "chore(release): monorepo v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+            }
+        ],
+        "publish": [
+            "@semantic-release/github"
+        ],
+        "success": []
+    }
+}
