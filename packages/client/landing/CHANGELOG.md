@@ -1,3 +1,10 @@
+# [@threequackinn/landing-v1.2.0](https://github.com/TheThreeQuackInn/site/compare/@threequackinn/landing-v1.1.0...@threequackinn/landing-v1.2.0) (2020-10-26)
+
+
+### Features
+
+* **hero:** add hero component ([1537034](https://github.com/TheThreeQuackInn/site/commit/15370341c7bf77809ab89152b6f0de082a1ad520))
+
 # [@threequackinn/landing-v1.1.0](https://github.com/TheThreeQuackInn/site/compare/@threequackinn/landing-v1.0.1...@threequackinn/landing-v1.1.0) (2020-10-25)
 
 
