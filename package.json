@@ -71,7 +71,7 @@
         "success": []
     },
     "resolutions": {
-        "mem": "4.0.0",
+        "mem": "4.3.0",
         "object-path": "0.11.5",
         "yargs-parser": "13.1.2"
     }
