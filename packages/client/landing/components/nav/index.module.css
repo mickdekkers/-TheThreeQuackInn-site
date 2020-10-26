@@ -12,6 +12,10 @@
     color: #fff;
 }
 
+.hoverMenu:hover svg {
+    fill: #fff;
+}
+
 .subMenu {
     display: none;
     left: 0;
@@ -21,6 +25,7 @@
     min-width: 320px;
     top: 100%;
     flex-direction: column;
+    z-index: 10;
 }
 
 .hoverMenu:hover .subMenu {

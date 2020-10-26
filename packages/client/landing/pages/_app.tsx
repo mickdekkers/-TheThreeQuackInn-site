@@ -7,7 +7,9 @@ export default function App({Component, pageProps}: AppProps) {
     return (
         <div className="bg-gray-100 min-h-screen">
             <Nav />
-            <Component {...pageProps} />
+            <main>
+                <Component {...pageProps} />
+            </main>
         </div>
     );
 }
