@@ -73,6 +73,6 @@
     "resolutions": {
         "mem": "4.0.0",
         "object-path": "0.11.5",
-        "yargs-parser": "13.1.2"
+        "yargs-parser": "20.2.3"
     }
 }
