@@ -1,3 +1,10 @@
+# [@threequackinn/landing-v1.2.1](https://github.com/TheThreeQuackInn/site/compare/@threequackinn/landing-v1.2.0...@threequackinn/landing-v1.2.1) (2020-10-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v10 ([d07d82a](https://github.com/TheThreeQuackInn/site/commit/d07d82ae049db18b6f4e3fbec502a8ddb1efc040))
+
 # [@threequackinn/landing-v1.2.0](https://github.com/TheThreeQuackInn/site/compare/@threequackinn/landing-v1.1.0...@threequackinn/landing-v1.2.0) (2020-10-26)
 
 
