@@ -8,7 +8,7 @@
         "classnames": "2.2.6"
     },
     "devDependencies": {
-        "@types/classnames": "2.2.10"
+        "@types/classnames": "2.2.11"
     },
     "release": {
         "branches": [
