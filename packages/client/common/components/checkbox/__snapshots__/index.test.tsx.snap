@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox renders correctly 1`] = `
+<label
+  className="inline-flex items-center mr-2"
+  htmlFor="Test"
+>
+  <input
+    checked={false}
+    className="form-checkbox focus:outline-none focus:shadow-outline"
+    id="Test"
+    name="Test"
+    onChange={[MockFunction]}
+    onKeyPress={[Function]}
+    type="checkbox"
+  />
+  <span
+    className="ml-1 text-gray-700"
+  >
+    Testing
+  </span>
+</label>
+`;
