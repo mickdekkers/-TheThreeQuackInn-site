@@ -1,4 +1,3 @@
-
 /* eslint-disable */
 const fs = require('fs');
 const data = require('./bestiary-mm.json');
@@ -32,7 +31,7 @@ const animalData = data.reduce((prev, current) => {
             size: current.size,
             ac: {
                 ac: typeof current.ac[0] === 'number' ? current.ac[0] : current.ac[0].ac,
-                from: current.ac[0].from && current.ac[0].from[0] || '',
+                from: (current.ac[0].from && current.ac[0].from[0]) || '',
             },
             hp: current.hp,
             speed: current.speed,
@@ -57,4 +56,4 @@ const animalData = data.reduce((prev, current) => {
 
 fs.writeFile('./src/data/animals.json', JSON.stringify(animalData, null, 4), 'utf-8', (err) => {
     if (err) throw new Error(err);
-})
+});
