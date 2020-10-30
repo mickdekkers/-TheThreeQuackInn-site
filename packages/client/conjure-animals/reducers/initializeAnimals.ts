@@ -32,7 +32,7 @@ export function initializeAnimals({animalName, num, animal}: InitAction) {
         animals[`${animalName}_${i}`] = {
             name: animal.name,
             hp: animal.hp.average + '',
-            dice: {rolls: [], outcome: -1},
+            roll: null,
             advantage: false,
             disadvantage: false,
         };

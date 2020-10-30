@@ -43,13 +43,22 @@ export type AnimalData = {
     [key: string]: AnimalObj;
 };
 
+export enum RollType {
+    Plain = 'Plain',
+    Advantage = 'Advantage',
+    Disadvantage = 'Disadvantage',
+}
+
+export type Roll = {
+    type: RollType;
+    dice: Array<number>;
+    outcome: number;
+};
+
 export type AnimalObj = {
     name: string;
     hp: string;
-    dice: {
-        rolls: Array<number>;
-        outcome: number;
-    };
+    roll: Roll | null;
     advantage: boolean;
     disadvantage: boolean;
 };
