@@ -1,29 +1,27 @@
-import {AnimalData, AnimalObj, UpdateIndivualRollAction} from './types';
+import {determineRollType} from '../libs/roll';
+import {AnimalData, AnimalObj, Roll, RollType, UpdateIndivualRollAction} from './types';
 
-function rollDice(animal: AnimalObj) {
+const d20 = () => Math.floor(Math.random() * 20) + 1;
+
+function rollDice(animal: AnimalObj): Roll | null {
     const {advantage, disadvantage} = animal;
 
     if (parseInt(animal.hp, 10) <= 0) {
-        return {outcome: -1, rolls: []};
+        return null;
     }
 
-    const rolls = [Math.floor(Math.random() * 20) + 1, Math.floor(Math.random() * 20) + 1];
-
-    if ((!advantage && !disadvantage) || (advantage && disadvantage)) {
-        return {
-            outcome: rolls[0],
-            rolls,
-        };
-    } else if (advantage) {
-        return {
-            outcome: Math.max(...rolls),
-            rolls,
-        };
-    }
+    const dice = [d20(), d20()];
+    const rollType = determineRollType({advantage, disadvantage});
 
     return {
-        outcome: Math.min(...rolls),
-        rolls,
+        type: rollType,
+        dice,
+        outcome:
+            rollType === RollType.Plain
+                ? dice[0]
+                : rollType === RollType.Advantage
+                ? Math.max(...dice)
+                : Math.min(...dice),
     };
 }
 
@@ -33,7 +31,7 @@ export function updateRolls(animals: AnimalData) {
     return keys.reduce((prev: AnimalData, current) => {
         prev[current] = {
             ...animals[current],
-            dice: rollDice(animals[current]),
+            roll: rollDice(animals[current]),
         };
 
         return prev;
@@ -45,7 +43,7 @@ export function updateIndivualRoll(animals: AnimalData, action: UpdateIndivualRo
         ...animals,
         [action.key]: {
             ...animals[action.key],
-            dice: rollDice(animals[action.key]),
+            roll: rollDice(animals[action.key]),
         },
     };
 }

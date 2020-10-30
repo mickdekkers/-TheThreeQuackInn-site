@@ -8,7 +8,7 @@ export function changeHp(animals: AnimalData, {hp, key, animal}: ChangeHpAction)
         [key]: {
             ...animals[key],
             hp: parsedHp > animal.hp.average ? animal.hp.average + '' : hp,
-            dice: parsedHp <= 0 ? {rolls: [], outcome: -1} : animals[key].dice,
+            roll: parsedHp <= 0 ? null : animals[key].roll,
         },
     };
 }

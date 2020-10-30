@@ -1,31 +1,23 @@
 import React from 'react';
-import {AnimalObj} from '../../../reducers/types';
+import {AnimalObj, RollType} from '../../../reducers/types';
 
 type Props = {
     animal: AnimalObj;
 };
 
 export default function RollOutcome({animal}: Props) {
-    const {dice, advantage, disadvantage} = animal;
+    const {roll} = animal;
 
-    if (dice.outcome === -1) {
+    if (roll == null) {
         return null;
     }
 
-    const max = Math.max(...dice.rolls);
-    const min = Math.min(...dice.rolls);
-
     return (
         <p className="mb-1">
-            <span className="inline-block mr-1 text-gray-700">
-                {(advantage && disadvantage) || (!advantage && !disadvantage)
-                    ? `Rolled: ${dice.outcome}`
-                    : `Rolled: ${dice.rolls.map((roll) => roll).join(' and ')}`}
-            </span>
-            {(advantage && disadvantage) || (!advantage && !disadvantage) ? null : (
-                <span className="inline-block mr-1 text-gray-700">
-                    {advantage ? `Outcome: ${max}, with advantage` : `Outcome: ${min}, with disadvantage`}
-                </span>
+            <span className="inline-block mr-1 text-gray-700">Rolled:</span>
+            <span className="inline-block mr-1 text-gray-700 font-bold">{roll.outcome}</span>
+            {roll.type === RollType.Plain ? null : (
+                <span className="inline-block mr-1 text-gray-700">{`(${roll.dice.join(' and ')})`}</span>
             )}
         </p>
     );
