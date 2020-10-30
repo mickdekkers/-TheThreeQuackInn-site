@@ -1,3 +1,10 @@
+# [@threequackinn/conjure-animals-v1.1.0](https://github.com/TheThreeQuackInn/site/compare/@threequackinn/conjure-animals-v1.0.0...@threequackinn/conjure-animals-v1.1.0) (2020-10-30)
+
+
+### Features
+
+* **conjure-animals:** improve dice roll data format and display ([16fcc8a](https://github.com/TheThreeQuackInn/site/commit/16fcc8aedd3b53b553e544cd13728aeac8e570ef))
+
 # @threequackinn/conjure-animals-v1.0.0 (2020-10-25)
 
 
