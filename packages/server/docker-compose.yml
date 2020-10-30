@@ -1,28 +1,28 @@
 version: '3.7'
 services:
-  server:
-    container_name: thethreequackinn-server
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - 3000:3000
-    depends_on:
-      - postgres
-    env_file:
-      - .env
+    server:
+        container_name: thethreequackinn-server
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - 3000:3000
+        depends_on:
+            - postgres
+        env_file:
+            - .env
 
-  postgres:
-    image: postgres:12
-    container_name: thethreequackinn-postgres
-    restart: always
-    ports:
-      - 5432:5432
-    env_file:
-      - .env
-    volumes:
-      - postgres:/var/lib/postgresql/data
+    postgres:
+        image: postgres:12
+        container_name: thethreequackinn-postgres
+        restart: always
+        ports:
+            - 5432:5432
+        env_file:
+            - .env
+        volumes:
+            - postgres:/var/lib/postgresql/data
 
 volumes:
-  postgres:
-    name: thethreequackinn-db
+    postgres:
+        name: thethreequackinn-db
