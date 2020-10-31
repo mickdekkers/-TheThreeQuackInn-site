@@ -1,4 +1,4 @@
-import {AnimalStats} from '../../components/spells/conjure-animals/Stats/stats';
+import {AnimalStats} from '../components/stats/stats';
 
 export enum ActionTypes {
     init = 'init',
