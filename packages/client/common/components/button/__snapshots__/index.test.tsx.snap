@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders the outline variant correctly 1`] = `
+<button
+  className="duration-300 ease-in-out rounded focus:outline-none focus:shadow-outline bg-transparent hover:bg-transparent"
+  onClick={[MockFunction]}
+  type="button"
+>
+  Testing
+</button>
+`;
+
+exports[`Button renders the primary variant correctly 1`] = `
+<button
+  className="duration-300 ease-in-out rounded focus:outline-none focus:shadow-outline text-white button-gradient"
+  onClick={[MockFunction]}
+  type="button"
+>
+  Testing
+</button>
+`;

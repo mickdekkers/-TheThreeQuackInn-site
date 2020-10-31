@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input renders correctly 1`] = `
+<div
+  className="w-full"
+>
+  <label
+    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-1"
+    htmlFor="test"
+  >
+    Test
+  </label>
+  <input
+    className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-2 px-2 md:px-3 md:py-2 mb-3 leading-tight focus:outline-none focus:shadow-outline focus:bg-white"
+    id="test"
+    name="test"
+    onChange={[MockFunction]}
+    type="text"
+    value="testing"
+  />
+</div>
+`;
+
+exports[`Input renders min/max correctly 1`] = `
+<div
+  className="w-full"
+>
+  <label
+    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-1"
+    htmlFor="test"
+  >
+    Test
+  </label>
+  <input
+    className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-2 px-2 md:px-3 md:py-2 mb-3 leading-tight focus:outline-none focus:shadow-outline focus:bg-white"
+    id="test"
+    max={8}
+    min={0}
+    name="test"
+    onChange={[MockFunction]}
+    type="text"
+    value="testing"
+  />
+</div>
+`;
+
+exports[`Input renders placeholder correctly 1`] = `
+<div
+  className="w-full"
+>
+  <label
+    className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-1"
+    htmlFor="test"
+  >
+    Test
+  </label>
+  <input
+    className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-2 px-2 md:px-3 md:py-2 mb-3 leading-tight focus:outline-none focus:shadow-outline focus:bg-white"
+    id="test"
+    name="test"
+    onChange={[MockFunction]}
+    placeholder="Type here..."
+    type="text"
+    value="testing"
+  />
+</div>
+`;

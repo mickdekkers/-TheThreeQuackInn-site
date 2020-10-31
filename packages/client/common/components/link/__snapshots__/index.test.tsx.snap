@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link renders correctly 1`] = `
+<a
+  className="transition-colors duration-300 mx-1 font-medium hover:underline link"
+  href="#"
+  target="_blank"
+>
+  Go to
+</a>
+`;
