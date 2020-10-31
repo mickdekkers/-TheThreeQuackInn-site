@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders correctly 1`] = `
+<div
+  className="rounded-lg bg-white shadow-lg md:shadow-xl relative overflow-hidden"
+>
+  <div
+    className="px-3 pt-2 pb-3 md:p-5 relative box-border w-full"
+  >
+    <h4
+      className="font-bold text-xl mb-2"
+    >
+      Testing
+    </h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante mauris, dapibus at tristique non, hendrerit at diam. Curabitur volutpat, ipsum ac imperdiet tincidunt, felis ipsum tincidunt lorem, vel tristique purus lacus eget ipsum. Sed gravida mattis volutpat. Nulla lacinia nisi egestas justo rhoncus, eget feugiat neque luctus. Vivamus quis turpis orci. Mauris vel nisi quis purus dictum placerat in eu mi. Pellentesque aliquet leo vitae justo laoreet tempor. In sagittis eleifend tempor. Cras tincidunt ultrices lacus quis finibus. Mauris mauris nulla, pharetra in dolor quis, varius facilisis neque. Vestibulum tempus fermentum diam at tristique. Aliquam congue laoreet enim, a aliquam urna feugiat non.
+    </p>
+  </div>
+</div>
+`;

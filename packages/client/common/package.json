@@ -8,7 +8,9 @@
         "classnames": "2.2.6"
     },
     "devDependencies": {
-        "@types/classnames": "2.2.11"
+        "@types/classnames": "2.2.11",
+        "@types/react-test-renderer": "16.9.3",
+        "react-test-renderer": "17.0.1"
     },
     "release": {
         "branches": [
